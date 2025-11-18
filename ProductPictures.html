@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    <title>Our Menu | Italian Pastries, Cannolis, and Sfogliatelle - Alberto's Pastries</title>
+    <meta name="description" content="View the full menu of Alberto's Pastries, featuring authentic Italian treats like Cannolis, Sfogliatelle, Croissants, and Tiramisu, with prices in ZAR.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.14/featherlight.min.css">
+    <link rel="stylesheet" href="CSS/MainStyle.css"> 
+    <link rel="stylesheet" href="CSS/GalleryStyle.css">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="JS/GalleryEnhancements.js" defer></script> 
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.14/featherlight.min.js"></script>
+    
+    <header>
+        <div class="container">
+            <h1>Our Delicious Menu</h1>
+            <p class="tagline">Authentic Italian treats baked fresh daily.</p>
+        </div>
+    </header>
+    
+    <main class="container">
+
+        <section id="menu-controls" aria-label="Menu Filtering and Sorting">
+            <div class="search-sort-container">
+                <input type="text" id="search-input" placeholder="Search pastries (e.g., Cannoli, Brownies)..." aria-label="Search Menu Items">
+                <div class="sort-buttons">
+                    <button id="sort-low-high" class="sort-btn" data-sort="low">Price: Low to High</button>
+                    <button id="sort-high-low" class="sort-btn" data-sort="high">Price: High to Low</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="pastry-menu" class="gallery">
+            <h2>Our Signature Pastries & Desserts</h2>
+            
+            <figure class="menu-item" data-price="45.00">
+                <a href="Images/Cannoli.jpeg" data-featherlight="image" title="Classic Sicilian Cannoli">
+                    <img src="Images/Cannoli.jpeg" alt="Classic Sicilian Cannoli filled with ricotta cream">
+                </a>
+                <figcaption>
+                    <h3>Cannoli</h3>
+                    <p>Classic Sicilian crispy pastry shell filled with sweetened ricotta.</p>
+                    <p class="price">R 45.00</p>
+                </figcaption>
+            </figure>
+            
+            <figure class="menu-item" data-price="25.00">
+                <a href="Images/CreamBuns.jpeg" data-featherlight="image" title="Soft Cream Buns">
+                    <img src="Images/CreamBuns.jpeg" alt="Soft, round Cream Buns dusted with sugar">
+                </a>
+                <figcaption>
+                    <h3>Cream Buns</h3>
+                    <p>Light, fluffy buns filled with fresh, rich cream.</p>
+                    <p class="price">R 25.00</p>
+                </figcaption>
+            </figure>
+            
+            <figure class="menu-item" data-price="35.00">
+                <a href="Images/FrenchCroissants.jpeg" data-featherlight="image" title="Flaky French Croissant">
+                    <img src="Images/FrenchCroissants.jpeg" alt="Flaky French Croissant">
+                </a>
+                <figcaption>
+                    <h3>French Croissant</h3>
+                    <p>Buttery, flaky croissant, perfect plain or with preserves.</p>
+                    <p class="price">R 35.00</p>
+                </figcaption>
+            </figure>
+            
+            <figure class="menu-item" data-price="40.00">
+                <a href="Images/SFOGLIATELLE.jpeg" data-featherlight="image" title="Traditional Neapolitan Sfogliatelle">
+                    <img src="Images/SFOGLIATELLE.jpeg" alt="Traditional Neapolitan Sfogliatelle">
+                </a>
+                <figcaption>
+                    <h3>Sfogliatelle</h3>
+                    <p>Neapolitan shell-shaped pastry filled with candied fruit and ricotta.</p>
+                    <p class="price">R 40.00</p>
+                </figcaption>
+            </figure>
+            
+            <figure class="menu-item" data-price="38.00">
+                <a href="Images/ItalianCreamFilledPastries.jpeg" data-featherlight="image" title="Italian Cream Puffs (Bignè)">
+                    <img src="Images/ItalianCreamFilledPastries.jpeg" alt="Small Italian Cream Filled Pastries">
+                </a>
+                <figcaption>
+                    <h3>Cream Puffs (Bignè)</h3>
+                    <p>Assortment of small, delicate Italian cream-filled pastries.</p>
+                    <p class="price">R 38.00</p>
+                </figcaption>
+            </figure>
+            
+            <figure class="menu-item" data-price="280.00">
+                <a href="Images/AssortedPastries.jpeg" data-featherlight="image" title="Assorted Pastry Box">
+                    <img src="Images/AssortedPastries.jpeg" alt="Large box of assorted Italian pastries">
+                </a>
+                <figcaption>
+                    <h3>Assorted Pastry Box (Per Box)</h3>
+                    <p>A curated selection of our best pastries (Approx. 8-10 items).</p>
+                    <p class="price">R 280.00</p>
+                </figcaption>
+            </figure>
+            
+            <figure class="menu-item" data-price="30.00">
+                <a href="Images/ItalianDoughnuts.jpeg" data-featherlight="image" title="Italian Doughnut (Bomboloni)">
+                    <img src="Images/ItalianDoughnuts.jpeg" alt="Italian Doughnuts, or Bomboloni">
+                </a>
+                <figcaption>
+                    <h3>Italian Doughnut (Bomboloni)</h3>
+                    <p>Soft, sweet fried dough, filled with custard or jam.</p>
+                    <p class="price">R 30.00</p>
+                </figcaption>
+            </figure>
+            
+            <figure class="menu-item" data-price="65.00">
+                <a href="Images/Tiramisu.jfif" data-featherlight="image" title="Slice of Tiramisu">
+                    <img src="Images/Tiramisu.jfif" alt="A slice of classic Tiramisu dessert">
+                </a>
+                <figcaption>
+                    <h3>Tiramisu (Per Slice)</h3>
+                    <p>Layered dessert of coffee-soaked ladyfingers and mascarpone cream.</p>
+                    <p class="price">R 65.00</p>
+                </figcaption>
+            </figure>
+            
+            <figure class="menu-item" data-price="42.00">
+                <a href="Images/PainEuChocolate.jfif" data-featherlight="image" title="Pain au Chocolat">
+                    <img src="Images/PainEuChocolate.jfif" alt="Pain au Chocolat (Chocolate Croissant)">
+                </a>
+                <figcaption>
+                    <h3>Pain au Chocolat</h3>
+                    <p>A classic croissant baked with two sticks of dark chocolate inside.</p>
+                    <p class="price">R 42.00</p>
+                </figcaption>
+            </figure>
+            
+            <figure class="menu-item" data-price="38.00">
+                <a href="Images/ChocolateEclairs.jfif" data-featherlight="image" title="Chocolate Éclairs">
+                    <img src="Images/ChocolateEclairs.jfif" alt="Shiny Chocolate Éclairs">
+                </a>
+                <figcaption>
+                    <h3>Chocolate Éclairs</h3>
+                    <p>Choux pastry filled with cream and topped with chocolate fondant.</p>
+                    <p class="price">R 38.00</p>
+                </figcaption>
+            </figure>
+            
+            <figure class="menu-item" data-price="40.00">
+                <a href="Images/Brownies.jfif" data-featherlight="image" title="Fudgy Brownies">
+                    <img src="Images/Brownies.jfif" alt="Fudgy Chocolate Brownies">
+                </a>
+                <figcaption>
+                    <h3>Fudgy Brownies</h3>
+                    <p>Rich, dense, and chewy chocolate brownies.</p>
+                    <p class="price">R 40.00</p>
+                </figcaption>
+            </figure>
+            
+            <figure class="menu-item" data-price="45.00">
+                <a href="Images/FlakyStrawberryDanishPastry.jfif" data-featherlight="image" title="Flaky Strawberry Danish">
+                    <img src="Images/FlakyStrawberryDanishPastry.jfif" alt="Flaky Strawberry Danish Pastry">
+                </a>
+                <figcaption>
+                    <h3>Strawberry Danish</h3>
+                    <p>Flaky pastry with sweet cream cheese and fresh strawberries.</p>
+                    <p class="price">R 45.00</p>
+                </figcaption>
+            </figure>
+
+        </section>
+    </main>
+    
+    </body>
+</html>
