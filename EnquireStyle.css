@@ -1,0 +1,15 @@
+.hidden {
+    display: none !important;
+}
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+.response-area {
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid var(--accent-2);
+    border-radius: 10px;
+    background-color: var(--accent);
+}

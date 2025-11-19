@@ -1,0 +1,137 @@
+
+.contact-form-section, .enquiry-form-section {
+    padding: 30px 0;
+}
+
+#contactForm, #enquiryForm {
+    max-width: 700px;
+    margin: 30px auto 50px;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid var(--accent, #f8d5d1);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(90,74,66,0.1);
+}
+
+fieldset {
+    border: 1px solid var(--muted, #857069);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+legend {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text, #5a4a42);
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text, #5a4a42);
+    font-size: 1rem;
+}
+
+.required {
+    color: #e53935; 
+    font-weight: 700;
+}
+
+input:not([type="submit"]),
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--muted, #857069);
+    border-radius: 6px;
+    font-size: 1rem;
+    color: var(--text, #5a4a42);
+    background-color: #fcfcfc;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--accent-2, #f7b7b0);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(247, 183, 176, 0.4); 
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--accent-2, #f7b7b0);
+    color: var(--text, #5a4a42);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent, #f8d5d1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.error-message {
+    color: #e53935;
+    font-size: 0.9em;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.response-area {
+    margin-top: 40px;
+    padding: 25px;
+    border: 2px solid var(--accent-2, #f7b7b0);
+    border-radius: 10px;
+    background-color: var(--accent, #f8d5d1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.response-area h3 {
+    margin-top: 0;
+    color: #388e3c; 
+    text-align: left;
+}
+
+.response-area p {
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    #contactForm, #enquiryForm {
+        padding: 20px 15px;
+        margin: 20px auto;
+    }
+    
+    fieldset {
+        padding: 15px;
+    }
+    
+    legend {
+        font-size: 1.1rem;
+    }
+}
